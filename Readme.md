@@ -11,6 +11,17 @@ according to your preferences.
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
 
+# Firefly Style Notes:
+
+This is a simplified code style guide. A more in depth one which will take precendence
+in most cases is available at: https://github.com/airbnb/javascript
+
+There's also the in-depth Google one at https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
+
+All three are worth reviewing. When there is a conflict, we will give the suggested resolution 
+here in this document. This document is more specific to Node, while the other two are more specific to
+browser environments, so each should be followed as appropriate to the code use.
+
 ## 2 Spaces for indention
 
 Use 2 spaces for indenting your code and swear an oath to never mix tabs and
@@ -37,15 +48,15 @@ cheap syntactic pleasures.
 [the opposition]: http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
 [hnsemicolons]: http://news.ycombinator.com/item?id=1547647
 
-## 80 characters per line
+## 100 characters per line
 
-Limit your lines to 80 characters. Yes, screens have gotten much bigger over the
+Limit your lines to 100 characters. Yes, screens have gotten much bigger over the
 last few years, but your brain has not. Use the additional room for split screen,
 your editor supports that, right?
 
-## Use single quotes
+## Prefer single quotes
 
-Use single quotes, unless you are writing JSON.
+Prefer single quotes, unless you are writing JSON.
 
 *Right:*
 
@@ -80,7 +91,13 @@ if (true)
 }
 ```
 
-Also, notice the use of whitespace before and after the condition statement.
+Also, notice the use of whitespace before and after the condition statement, but not after/before inside the parens.
+
+Other whitespace: 
+* between operatators within expressions:
+```js
+if (foo === bar) {
+```
 
 ## Declare one variable per var statement
 
@@ -210,6 +227,8 @@ var b = {"good": 'code'
         };
 ```
 
+Note: final trailing comma is optional since it's illegal in JSON.
+
 ## Use the === operator
 
 Programming is not about remembering [stupid rules][comparisonoperators]. Use
@@ -236,7 +255,7 @@ if (a == '') {
 
 [comparisonoperators]: https://developer.mozilla.org/en/JavaScript/Reference/Operators/Comparison_Operators
 
-## Use multi-line ternary operator
+## Prefer multi-line ternary operator
 
 The ternary operator should not be used on a single line. Split it up into multiple lines instead.
 
@@ -377,9 +396,9 @@ req.on('end', function() {
 });
 ```
 
-## No nested closures
+## Avoid nested closures
 
-Use closures, but don't nest them. Otherwise your code will become a mess.
+Use closures, but preferably don't nest them. Otherwise your code will become a mess.
 
 *Right:*
 
