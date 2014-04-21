@@ -13,6 +13,9 @@ All three are worth reviewing. When there is a conflict, we will give the sugges
 here in this document. This document is more specific to Node, while the other two are more specific to
 browser environments, so each should be followed as appropriate to the code use.
 
+Code should be given jsdoc comments to provide type information.
+https://developers.google.com/closure/compiler/docs/js-for-compiler
+
 # Node.js Style Guide
 
 This is a guide for writing consistent and aesthetically pleasing node.js code.
