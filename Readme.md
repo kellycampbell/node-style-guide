@@ -16,6 +16,9 @@ browser environments, so each should be followed as appropriate to the code use.
 Code should be given jsdoc comments to provide type information.
 https://developers.google.com/closure/compiler/docs/js-for-compiler
 
+For Sublime Text 3, a package called "DocBlockr" helps automatically add JS doc comments.
+
+
 # Node.js Style Guide
 
 This is a guide for writing consistent and aesthetically pleasing node.js code.
