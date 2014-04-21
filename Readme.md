@@ -1,3 +1,18 @@
+# Firefly Style Notes:
+
+Code is read much more than code is written. The purpose behind using a consistent style is to 
+write code which is more readable. Having consistent formatting and spacing, etc. makes
+the code easier to read by reducing distractions due to inconsistency.
+
+This is a simplified code style guide. A more in depth one which will take precendence
+in most cases is available at: https://github.com/airbnb/javascript
+
+There's also the in-depth Google one at https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
+
+All three are worth reviewing. When there is a conflict, we will give the suggested resolution 
+here in this document. This document is more specific to Node, while the other two are more specific to
+browser environments, so each should be followed as appropriate to the code use.
+
 # Node.js Style Guide
 
 This is a guide for writing consistent and aesthetically pleasing node.js code.
@@ -10,17 +25,6 @@ license. You are encouraged to fork this repository and make adjustments
 according to your preferences.
 
 ![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
-
-# Firefly Style Notes:
-
-This is a simplified code style guide. A more in depth one which will take precendence
-in most cases is available at: https://github.com/airbnb/javascript
-
-There's also the in-depth Google one at https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
-
-All three are worth reviewing. When there is a conflict, we will give the suggested resolution 
-here in this document. This document is more specific to Node, while the other two are more specific to
-browser environments, so each should be followed as appropriate to the code use.
 
 ## 2 Spaces for indention
 
